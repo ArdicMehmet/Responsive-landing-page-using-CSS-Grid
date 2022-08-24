@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+  }
+
+  .container {
+    height: 100vh;
+    width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card5 card3";
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .type-one-bg {
+    background-color: hsl(263, 55%, 52%);
+  }
+
+  .type-two-bg {
+    background-color: hsl(217, 19%, 35%);
+  }
+
+  .type-three-bg {
+    background-color: hsl(219, 29%, 14%);
+  }
+
+  .type-four-bg {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .color-white {
+    color: white;
+  }
+
+  .color-black {
+    color: black;
+  }
+
+  .text100 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+
+  /*CARD CSS*/
+  .card {
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px hsl(0, 0%, 81%);
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .card-header img {
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .card-header .title {
+    opacity: .5;
+  }
+
+  .card-header .author {
+    font-weight: bold;
+    opacity: .7;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 20px;
+  }
+
+  .card .text {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-body .excerpt {
+    opacity: .7;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+
+  @media only screen and (max-width:375px) {
+    .container {
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5";
+    }
+  }
