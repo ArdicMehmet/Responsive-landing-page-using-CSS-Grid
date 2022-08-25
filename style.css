@@ -140,7 +140,7 @@ article .excerpt {
   grid-area: card5;
 }
 
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) {
   main {
     width: 80%;
     height: auto;
@@ -151,9 +151,9 @@ article .excerpt {
       "card3 card2"
       "card5 card5";
   }
-}
+} */
 
-/* @media only screen and (max-width: 875px) {
+@media only screen and (max-width: 875px) {
   main {
     width: 90%;
     height: auto;
@@ -166,7 +166,7 @@ article .excerpt {
       "card4"
       "card5";
   }
-} */
+}
 
 @media only screen and (max-width: 375px) {
   main {
