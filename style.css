@@ -16,7 +16,7 @@ body {
 
 main {
   height: 90vh;
-  width: 1440px;
+  width: 1140px;
   margin: auto auto;
   padding: 30px;
   display: grid;
@@ -140,7 +140,7 @@ article .excerpt {
   grid-area: card5;
 }
 
-/* @media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1140px) {
   main {
     width: 80%;
     height: auto;
@@ -151,7 +151,7 @@ article .excerpt {
       "card3 card2"
       "card5 card5";
   }
-} */
+}
 
 @media only screen and (max-width: 875px) {
   main {
